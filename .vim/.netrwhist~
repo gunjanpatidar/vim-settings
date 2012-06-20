@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/gunjan/public_html/zomato4/application/library/Assetic/Factory'
+let g:netrw_dirhist_2='/Users/gunjan/public_html/zomato4/application/library/Assetic/Factory/Loader'
+let g:netrw_dirhist_3='/Users/gunjan/public_html/zomato4/application/library/Assetic/Asset'
+let g:netrw_dirhist_4='/Users/gunjan/public_html/zomato4/application/library/Assetic/Asset/Iterator'
