@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/gunjan/public_html/zomato4/application/admin/tools'
-let g:netrw_dirhist_2='/Users/gunjan/public_html/zomato4/application/admin'
-let g:netrw_dirhist_3='/Users/gunjan/public_html/zomato4/application/admin/sync'
-let g:netrw_dirhist_4='/Users/gunjan/public_html/zomato4/application/admin/sync/data_entry'
-let g:netrw_dirhist_5='/Users/gunjan/public_html/zomato4/application/admin/sync'
-let g:netrw_dirhist_6='/Users/gunjan/public_html/zomato4/application/admin'
-let g:netrw_dirhist_7='/Users/gunjan/public_html/zomato4/application/admin/tools'
