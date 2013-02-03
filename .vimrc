@@ -3,18 +3,34 @@
 "
 " Plugins:
 " matchit - Match HTML tags using %
+" pathogen
 
 " Use UTF-8 as the default buffer encoding
 set enc=utf-8
 
-" Turn syntax highlighting on
-syntax on
 
 " Remember up to 100 'colon' commmands and search patterns
 set history=100
 
+
+""
+"" APPEARANCE
+""
+
+" Turn syntax highlighting on
+syntax on
+
 " Show line numbers
 set number
+
+" Colored column (to see line size violations)
+set colorcolumn=80
+highlight ColorColumn ctermbg=238
+
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
 
 
 ""
@@ -71,20 +87,6 @@ set ic
 set scs
 
 
-""
-"" SHORTCUTS
-""
-
-" Delete/Copy current word
-" caw, yaw
-" caW, yaW
-
-" Delete/Copy between enclosures
-" yi{, yi(, yi[, yi", yi'
-" di{, di(, di[, di", di'
-
-
-
 
 
 
@@ -95,9 +97,6 @@ filetype indent on
 
 
 
-" Colored column (to see line size violations)
-set colorcolumn=80
-highlight ColorColumn ctermbg=238
 
 " Source .vimrc after saving .vimrc
 autocmd bufwritepost .vimrc source $MYVIMRC
@@ -110,6 +109,22 @@ set scrolljump=1
 
 " Indicate jump out of the screen when 3 lines before end of the screen
 set scrolloff=3
+
+""
+"" KEY MAPPING / SHORTCUTS 
+""
+
+" Delete/Copy current word
+" caw, yaw
+" caW, yaW
+
+
+" Delete/Copy between enclosures
+" yi{, yi(, yi[, yi", yi'
+" di{, di(, di[, di", di'
+
+
+let mapleader = ","
 
 " page down with <Space>
 nmap <Space> <PageDown>
@@ -126,5 +141,13 @@ vnoremap > >gv
 "autocmd InsertEnter * se cul 
 
 
-highlight Pmenu ctermbg=238 gui=bold
-highlight PmenuSel ctermbg=001 gui=bold
+" highlight Pmenu ctermbg=238 gui=bold
+" highlight PmenuSel ctermbg=001 gui=bold
+
+
+" Initialize pathogen
+execute pathogen#infect()
+
+let g:CommandTMaxHeight=20
+let g:CommandTCancelMap='<Esc>'
+let g:CommandTAcceptSelectionTabMap='t'
