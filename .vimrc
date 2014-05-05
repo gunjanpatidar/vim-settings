@@ -5,13 +5,21 @@
 " matchit - Match HTML tags using %
 " pathogen
 
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
 " Use UTF-8 as the default buffer encoding
 set enc=utf-8
 
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
 
 " Remember up to 100 'colon' commmands and search patterns
 set history=100
 
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
 
 ""
 "" APPEARANCE
@@ -61,6 +69,9 @@ set laststatus=2
 
 " Show (partial) commands (or size of selection in Visual mode) in the status line
 set showcmd
+
+" Always show Show current mode at the bottom
+set showmode
 
 
 
