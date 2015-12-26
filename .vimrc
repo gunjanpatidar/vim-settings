@@ -110,7 +110,7 @@ filetype indent on
 
 
 " Source .vimrc after saving .vimrc
-autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost .nvimrc source $MYVIMRC
 
 " Don't highlight results of a search
 set nohlsearch
@@ -149,7 +149,7 @@ vnoremap > >gv
 
 " Highlight current line in insert mode.
 " autocmd InsertLeave * se nocul
-"autocmd InsertEnter * se cul 
+autocmd InsertEnter * se cul 
 
 
 " highlight Pmenu ctermbg=238 gui=bold
@@ -162,3 +162,5 @@ execute pathogen#infect()
 let g:CommandTMaxHeight=20
 let g:CommandTCancelMap='<Esc>'
 let g:CommandTAcceptSelectionTabMap='t'
+
+set grepprg=ack-grep
